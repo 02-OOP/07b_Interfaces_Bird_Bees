@@ -1,6 +1,7 @@
 package com.cc.java;
 
 import com.cc.java.bees.*;
+import com.cc.java.birds.*;
 
 
 public class App {
@@ -11,17 +12,22 @@ public class App {
         HoneyBee worker = new Worker();
         HoneyBee drone = new Drone();
 
+        Bird bird = new Bird();
+
+        output("------ Bees ---------");
+
         output(queen.doYourJob());
         output(worker.doYourJob());
         output(drone.doYourJob());
 
-        output("---------------");
+        output("------ Bird(s) ---------");
+        output(bird.hasFeathers());
     
+        output("------- Birds & Bees --------");
         output(queen.fly());
         output(worker.fly());
         output(drone.fly());
-
-        output("---------------");
+        output(bird.fly());  
 
     }
 
